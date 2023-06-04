@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Open in Spotify",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Displays an Open in Spotify alert for sideloaded Spotify",
+        "description": "Description of what the extension does."
+    }
+}
