@@ -7,9 +7,10 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 function afterNavigate() {
-    var locationArr = window.location.pathname.split("/")
-    if (locationArr.includes("album") || locationArr.includes("artist") || locationArr.includes("episode") || locationArr.includes("playlist") || locationArr.includes("show") || locationArr.includes("track") || locationArr.includes("user")) {
-        window.location.href = `spotify:/${window.location.pathname}`
+    const newPathname = window.location.pathname.replace(/\/intl-\w+\//g, "/");
+
+    if (/album|artist|episode|playlist|show|track|user/.test(newPathname)) {
+        window.location.href = `spotify:/${newPathname}`;
     }
 }
 
