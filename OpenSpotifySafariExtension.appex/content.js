@@ -7,10 +7,8 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 function afterNavigate() {
-    const newPathname = window.location.pathname.replace(/\/intl-\w+\//g, "/");
-
-    if (/album|artist|episode|playlist|show|track|user/.test(newPathname)) {
-        window.location.href = `spotify:/${newPathname}`;
+    if (window.location.pathname != "/") {
+        window.location.href = "spotify://eevee/" + window.location.host + window.location.pathname
     }
 }
 

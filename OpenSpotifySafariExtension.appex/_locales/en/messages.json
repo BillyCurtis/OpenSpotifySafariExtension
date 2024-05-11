@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "Displays an Open in Spotify alert for sideloaded Spotify",
+        "message": "Displays an Open in Spotify alert for sideloaded Spotify. Requires EeveeSpotify 3.1 or newer.",
         "description": "Description of what the extension does."
     }
 }

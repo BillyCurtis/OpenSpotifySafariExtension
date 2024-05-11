@@ -20,7 +20,7 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://*.spotify.com/*" ]
+        "matches": [ "*://*.spotify.com/*", "*://spotify.app.link/*" ]
     }],
 
     "action": {
