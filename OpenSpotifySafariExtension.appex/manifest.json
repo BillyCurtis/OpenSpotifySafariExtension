@@ -20,7 +20,8 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://*.spotify.com/*", "*://spotify.app.link/*" ]
+        "matches": [ "*://*.spotify.com/*", "*://spotify.app.link/*" ],
+        "exclude_matches": ["*://charts.spotify.com/*"]
     }],
 
     "action": {
